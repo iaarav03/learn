@@ -1,22 +1,8 @@
 {
   "version": 2,
   "name": "info-project-share",
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
+  "public": true,
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    },
     {
       "source": "/frontend-main.zip",
       "headers": [
