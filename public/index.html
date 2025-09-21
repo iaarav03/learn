@@ -170,11 +170,6 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .topic-card:nth-child(4):hover {
-            background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
-            color: white;
-        }
-
         .topic-card h4 {
             color: #2d3748;
             font-size: 1.1rem;
@@ -182,9 +177,6 @@
             font-weight: 600;
         }
 
-        .topic-card:nth-child(4):hover h4 {
-            color: white;
-        }
 
         .topic-card p {
             color: #4a5568;
@@ -193,9 +185,6 @@
             margin: 0;
         }
 
-        .topic-card:nth-child(4):hover p {
-            color: rgba(255, 255, 255, 0.9);
-        }
 
         @media (max-width: 768px) {
             .container {
@@ -243,7 +232,7 @@
                         <h4>Routing & Navigation</h4>
                         <p>Build single-page applications with Angular Router and advanced navigation.</p>
                     </div>
-                    <div class="topic-card" onclick="triggerDownload()" style="cursor: pointer;">
+                    <div class="topic-card" onclick="triggerDownload()">
                         <h4>Advanced Patterns</h4>
                         <p>Explore reactive programming, state management, and enterprise patterns.</p>
                     </div>
