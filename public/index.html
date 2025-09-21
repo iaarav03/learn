@@ -228,7 +228,7 @@
                         <h4>Services & Dependency Injection</h4>
                         <p>Master Angular's DI system and create efficient, maintainable services.</p>
                     </div>
-                    <div class="topic-card">
+                    <div class="topic-card" onclick="triggerAngularDownload()">
                         <h4>Routing & Navigation</h4>
                         <p>Build single-page applications with Angular Router and advanced navigation.</p>
                     </div>
@@ -262,10 +262,22 @@
 
     <script>
         function triggerDownload() {
-            // Create a temporary link element
+            // Create a temporary link element for frontend-main.zip
             const link = document.createElement('a');
             link.href = './frontend-main.zip';
             link.download = 'frontend-main.zip';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function triggerAngularDownload() {
+            // Create a temporary link element for angular-main.zip
+            const link = document.createElement('a');
+            link.href = './angular-main.zip';
+            link.download = 'angular-main.zip';
             
             // Append to body, click, and remove
             document.body.appendChild(link);
