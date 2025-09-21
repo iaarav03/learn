@@ -1,0 +1,17 @@
+{
+  "name": "info-project-share",
+  "version": "1.0.0",
+  "description": "INFO Project Sprint Backlog and Documentation Sharing Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "serve ."
+  },
+  "keywords": ["info", "project", "sprint", "backlog", "documentation"],
+  "author": "INFO Project Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "name": "info-project-share",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "functions": {},
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/frontend-main.zip",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/zip"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"frontend-main.zip\""
+        }
+      ]
+    }
+  ]
+}
